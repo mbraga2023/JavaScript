@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Effects</title>
+    <!--jQuery-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+
+    <!--JS-->
+    <script>
+
+        $(document).ready(function () {
+            //exibir ou ocultar conteudos
+
+            //Exibir
+            $("#exibir").click(function () {//chamada de ID
+                $("img").show();//tag IMG
+            });
+
+
+
+            //Ocultar
+            $("#ocultar").click(function () {//chamada de ID
+                $("img").hide();//tag IMG
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <br>
+    <img src="img/counters-bg.jpg" height="200px">
+
+
+</body>
+
+</html>

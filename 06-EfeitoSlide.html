@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Efeito Slide</title>
+    <!--jQuery-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+
+    <!--JS-->
+    <script>
+
+        $(document).ready(function () {
+            //ocultar
+            $(".ocultar").click(function(){
+                $(".mensagem").slideUp();
+            });
+
+            //exibir
+            $(".exibir").click(function(){
+                $(".mensagem").slideDown();
+            });
+            //tempo pode ser editado como o Fade
+            //tempo em milisegundos
+        })
+
+    </script>
+
+</head>
+
+<body>
+    <h1 class="exibir">Exibir</h1>
+    <h1 class="ocultar">Ocultar</h1>
+<hr>
+    <h1 class="mensagem">Ola</h1>
+</body>
+
+</html>

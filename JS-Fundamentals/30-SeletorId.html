@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event</title>
+    <!--JS-->
+    <script>
+    
+        function exibirTexto(){
+            //obter o valor do campo texto a partir da classe
+            var conteudo = document.getElementsById("campo");
+
+            //ID nao precisa colocar a posicao 
+            //exibir a captura
+            alert(conteudo.value)
+            //todo INPUT usa o .value
+
+            //apagar o conteudo apos o fechamento da janela
+            // atribuir valor ao campo
+            campo.value = "";
+        }
+    </script>
+
+</head>
+<body>
+    <input type="text" id="campo">   
+    <button onclick="exibitTexto()">Click aqui</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event</title>
+    <!--JS-->
+    <script>
+        //3 tipos
+        // on key UP: Exibe o caracter e depois executa a acao
+
+        //on Key DOWN: Primeiro executa a acao e depois mostra o caracter
+
+        // on key PRESS:  Primeiro executa a acao e depois mostra o caracter (NAO tem suporte  F1-F12,, ALT, CONTROL, SHIFT...)
+
+        function exibir(){
+            //obter o valor do campo texto
+            var campo = document.getElementById("campo").value;
+
+            //exibir a captura
+            alert(campo)
+        }
+    </script>
+
+</head>
+<body>
+    <input type="text" class="text" id="campo" onkeyup="exibir()">
+</body>
+</html>

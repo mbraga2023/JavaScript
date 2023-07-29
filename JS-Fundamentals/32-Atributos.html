@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributes</title>
+    <!--JS-->
+    <script>
+    
+        function alterarLink(){
+            //obter o valor do campo texto a partir da classe
+            var link = document.getElementsByTagName("a")[0];
+            //tag a, na primeira posicao
+
+            //alterar atributo da tag a (novo link)
+            link.href = "http://uol.com.br";
+            link.innerHTML = "Link UOL";            
+        }
+    </script>
+
+</head>
+<body>
+    
+    <a href="http://google.com">Link Google</a>
+    <!-- a =  Tag , href = atributo--> 
+
+    <button onclick="alterarLink()">Alterar link</button> 
+</body>
+</html>

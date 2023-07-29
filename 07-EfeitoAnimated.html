@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Animated Effect</title>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+<!--CSS-->
+<style>
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+    }
+</style>
+
+    <!--JQuery-->
+    <script>
+        $(document).ready(function(){
+            //animacao
+            $("button").click(function(){
+                $("div").animate({
+                    //implementar atributos CSS
+                    width: "400px",
+                    height:"300px"
+                });
+            });
+        });
+        
+    </script>
+
+</head>
+<body>
+    <button>Animacao</button>
+    
+    <div>
+
+    </div>
+     
+</body>
+</html>

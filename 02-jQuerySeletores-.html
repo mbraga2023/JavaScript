@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Base</title>
+    <!--jQuery-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    
+    <!--JS-->
+    <script>
+        //verificacao Jquery
+        // ao carregar o documento
+        $(document).ready(function(){
+            //variaveis
+            var campo = $("input").val();
+            //manipulando a tag input + valor do input
+
+            var titulo =$("#titulo").html();
+            //manipulando o ID + valor do texto
+
+            var subtitulo=$(".subtitulo").html();
+            //manipulando o classe + valor do texto
+
+            //exibindo
+            alert(campo);
+            alert(titulo);
+            alert(subtitulo);
+
+
+
+        })
+        //so vai executar os scripts apos o carregamento da pagina
+        
+    </script>
+
+</head>
+<body>
+    <input type="text" value="Campo Nome">
+    <h1 id="titulo">Titulo H1</h1>
+    <h2 class="subtitulo">Subtitulo H2</h2>
+     
+</body>
+</html>

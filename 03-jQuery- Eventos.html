@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Events</title>
+    <!--jQuery-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    
+    <!--JS-->
+    <script>
+        
+        $(document).ready(function(){
+            //evento de click
+            $("button").click(function(){
+                
+                //adicionar o texto no H1
+                $("h1").html("Voce clicou no botao");
+            });
+
+
+        })
+        
+    </script>
+
+</head>
+<body>
+    <h1></h1>
+     <button>Clique Aqui</button>
+</body>
+</html>

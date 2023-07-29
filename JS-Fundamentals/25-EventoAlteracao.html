@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Event</title>
+    <!--JS-->
+    <script>
+        //funcao do botao
+        function mensagem(){
+            //obter o curso selecionado
+            var curso = document.getElementById("cursos").value;
+
+            //exibir o valor capturado
+            alert(curso);
+        }
+
+    </script>
+
+</head>
+<body>
+    <select onchange="mensagem()" id="cursos">
+        <option value="" class="curso">Escolha seu Curso</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Java Script</option>
+    </select>
+
+</body>
+</html>

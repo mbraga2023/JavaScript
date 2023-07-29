@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event</title>
+    <!--JS-->
+    <script>
+    
+        function exibirTexto(){
+            //obter o valor do campo texto a partir da classe
+            var campo = document.getElementsByClassName("texto")[2];
+
+            //captura a partir da posicao do elemento []
+            //nome da classe + posicao
+            //exibir a captura
+            alert(campo)
+        }
+    </script>
+
+</head>
+<body>
+    <button onclick="exibirTexto()"></button>
+    <h1 class="texto">Titulo H1</h1>
+    <h2 class="texto">Titulo H2</h2>
+    <p class="texto">Paragrafo</p>    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Fade Effect</title>
+    <!--jQuery-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    
+    <!--JS-->
+    <script>
+        
+        $(document).ready(function(){
+            //ocultar H1
+            $("h1").css("display","none");
+
+            //Exibir o H1
+            $("#exibir").click(function(){
+                $("h1").fadeIn();
+            });
+
+            //ocultar o H1
+            $("#ocultar").click(function(){
+                $("h1").fadeOut();
+            });
+            /*
+            -default 0.4s
+            - Slow 0.06s
+            - digitar o valor em milisegundos Ex: 3000 = 3s
+
+            */
+
+        })
+        
+    </script>
+
+</head>
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <hr>
+    <h1>Aprendendo JQuery</h1>
+     
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Change Attributes</title>
+    <!--jQuery-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    
+    <!--JS-->
+    <script>
+        
+        $(document).ready(function(){
+
+            //selecionar o elemento IMG
+            $("img").attr("height","300")
+            $("img").attr("title","Alterando o title")
+            //attr muda o atributo ja disposto
+        })
+        
+    </script>
+
+</head>
+<body>
+    <img src="img/counters-bg.jpg" height="200" title="logo">
+    
+     
+</body>
+</html>
